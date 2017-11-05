@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Baseball scorekeeper</string>
+    
+    <string name="team_A">Team A</string>
+
+    <string name="team_B">Team B</string>
+
+    <string name="zero">0</string>
+
+    <string name="plus">+</string>
+
+    <string name="plus_one_point">+1 point</string>
+
+    <string name="plus_two_point">+2 point</string>
+
+    <string name="ball">b</string>
+
+    <string name="strike">s</string>
+
+    <string name="out">o</string>
+
+    <string name="reset">reset</string>
+</resources>
