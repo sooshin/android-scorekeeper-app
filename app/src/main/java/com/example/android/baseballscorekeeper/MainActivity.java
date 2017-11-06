@@ -7,19 +7,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     // Tracks the score for Team A
-    int scoreTeamA = 0;
+    private int scoreTeamA = 0;
 
     // Tracks the score for Team B
-    int scoreTeamB = 0;
+    private int scoreTeamB = 0;
 
     // The number of balls
-    int balls = 0;
+    private int balls = 0;
 
     // The number of strikes
-    int strikes = 0;
+    private int strikes = 0;
 
     // The number of outs
-    int outs = 0;
+    private int outs = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
