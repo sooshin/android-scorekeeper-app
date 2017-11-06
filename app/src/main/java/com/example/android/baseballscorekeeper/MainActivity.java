@@ -21,10 +21,32 @@ public class MainActivity extends AppCompatActivity {
     // The number of outs
     private int outs = 0;
 
+    // TextView that displays Team A score
+    private TextView mTeamAScoreView;
+
+    // TextView that displays Team B score
+    private TextView mTeamBScoreView;
+
+    // TextView that displays the number of balls
+    private TextView mBallView;
+
+    // TextView that displays the number of strikes
+    private TextView mStrikeView;
+
+    // TextView that displays the number of outs
+    private TextView mOutView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mTeamAScoreView = (TextView) findViewById(R.id.team_a_score);
+        mTeamBScoreView = (TextView) findViewById(R.id.team_b_score);
+        mBallView = (TextView) findViewById(R.id.ball);
+        mStrikeView = (TextView) findViewById(R.id.strike);
+        mOutView = (TextView) findViewById(R.id.out);
+
     }
 
     /**
@@ -32,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
-        displayForTeamA(scoreTeamA);
+        display(mTeamAScoreView, scoreTeamA);
     }
 
     /**
@@ -40,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addTwoForTeamA(View v) {
         scoreTeamA = scoreTeamA + 2;
-        displayForTeamA(scoreTeamA);
+        display(mTeamAScoreView, scoreTeamA);
     }
 
     /**
@@ -48,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
-        displayForTeamB(scoreTeamB);
+        display(mTeamBScoreView, scoreTeamB);
     }
 
     /**
@@ -56,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB = scoreTeamB + 2;
-        displayForTeamB(scoreTeamB);
+        display(mTeamBScoreView, scoreTeamB);
     }
 
     /**
@@ -67,9 +89,9 @@ public class MainActivity extends AppCompatActivity {
         if (balls == 4) {
             balls = 0;
             strikes = 0;
-            displayForStrike(strikes);
+            display(mStrikeView, strikes);
         }
-        displayForBall(balls);
+        display(mBallView, balls);
     }
 
     /**
@@ -81,10 +103,10 @@ public class MainActivity extends AppCompatActivity {
         if (strikes == 3){
             strikes = 0;
             balls = 0;
-            displayForBall(balls);
+            display(mBallView, balls);
             addOneForOut(findViewById(R.id.out));
         }
-        displayForStrike(strikes);
+        display(mStrikeView, strikes);
     }
 
     /**
@@ -100,9 +122,9 @@ public class MainActivity extends AppCompatActivity {
         }
         balls = 0;
         strikes = 0;
-        displayForBall(balls);
-        displayForStrike(strikes);
-        displayForOut(outs);
+        display(mBallView, balls);
+        display(mStrikeView, strikes);
+        display(mOutView, outs);
     }
 
     /**
@@ -115,50 +137,18 @@ public class MainActivity extends AppCompatActivity {
         balls = 0;
         strikes = 0;
         outs = 0;
-        displayForTeamA(scoreTeamA);
-        displayForTeamB(scoreTeamB);
-        displayForBall(balls);
-        displayForStrike(strikes);
-        displayForOut(outs);
+        display(mTeamAScoreView, scoreTeamA);
+        display(mTeamBScoreView, scoreTeamB);
+        display(mBallView, balls);
+        display(mStrikeView, strikes);
+        display(mOutView, outs);
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the score on scoreView
      */
-    public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+    public void display(TextView scoreView, int score) {
         scoreView.setText(String.valueOf(score));
     }
 
-    /**
-     * Displays the given score for Team B.
-     */
-    public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    /**
-     * Displays the number of balls.
-     */
-    public void displayForBall(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.ball);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    /**
-     * Displays the number of strikes.
-     */
-    public void displayForStrike(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.strike);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    /**
-     * Display the number of outs.
-     */
-    public void displayForOut(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.out);
-        scoreView.setText(String.valueOf(score));
-    }
 }
