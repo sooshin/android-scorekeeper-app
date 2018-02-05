@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="16dp"
+                    android:padding="@dimen/activity_margin"
                     android:text="@string/team_A"
                     android:textSize="14sp" />
 
@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="san-serif-light"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="24dp"
+                    android:paddingBottom="@dimen/margin_horizontal"
                     android:text="@string/zero"
                     android:textColor="@android:color/black"
                     android:textSize="56sp" />
@@ -45,9 +45,9 @@
                     android:id="@+id/add_one_team_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_vertical"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:layout_marginRight="@dimen/margin_horizontal"
                     android:onClick="addPoint"
                     android:text="@string/plus_one_point" />
 
@@ -55,9 +55,9 @@
                     android:id="@+id/add_two_team_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_vertical"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:layout_marginRight="@dimen/margin_horizontal"
                     android:onClick="addPoint"
                     android:text="@string/plus_two_point" />
 
@@ -65,9 +65,9 @@
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/view_width"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/activity_margin"
                 android:background="@android:color/darker_gray" />
 
             <LinearLayout
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="16dp"
+                    android:padding="@dimen/activity_margin"
                     android:text="@string/team_B"
                     android:textSize="14sp" />
 
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="san-serif-light"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="24dp"
+                    android:paddingBottom="@dimen/margin_horizontal"
                     android:text="@string/zero"
                     android:textColor="@android:color/black"
                     android:textSize="56sp" />
@@ -100,9 +100,9 @@
                     android:id="@+id/add_one_team_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_vertical"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:layout_marginRight="@dimen/margin_horizontal"
                     android:onClick="addPoint"
                     android:text="@string/plus_one_point" />
 
@@ -110,9 +110,9 @@
                     android:id="@+id/add_two_team_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_vertical"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:layout_marginRight="@dimen/margin_horizontal"
                     android:onClick="addPoint"
                     android:text="@string/plus_two_point" />
 
@@ -124,20 +124,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/activity_margin"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="24dp"
+                android:layout_marginLeft="@dimen/margin_horizontal"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="@string/ball"
                 android:textAllCaps="true"
-                android:textColor="#009688"
+                android:textColor="@color/color_ball_green"
                 android:textSize="30sp" />
 
             <TextView
@@ -149,14 +149,14 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="@string/zero"
-                android:textColor="#616161"
+                android:textColor="@color/color_count"
                 android:textSize="30sp" />
 
             <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
                 android:layout_gravity="center"
-                android:layout_marginRight="24dp"
+                android:layout_marginRight="@dimen/margin_horizontal"
                 android:layout_weight="0"
                 android:onClick="addOneForBall"
                 android:text="@string/plus" />
@@ -167,20 +167,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="24dp"
+                android:layout_marginLeft="@dimen/margin_horizontal"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="@string/strike"
                 android:textAllCaps="true"
-                android:textColor="#2196F3"
+                android:textColor="@color/color_strike_blue"
                 android:textSize="30sp" />
 
             <TextView
@@ -192,14 +192,14 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="@string/zero"
-                android:textColor="#616161"
+                android:textColor="@color/color_count"
                 android:textSize="30sp" />
 
             <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
                 android:layout_gravity="center"
-                android:layout_marginRight="24dp"
+                android:layout_marginRight="@dimen/margin_horizontal"
                 android:layout_weight="0"
                 android:onClick="addOneForStrike"
                 android:text="@string/plus" />
@@ -210,20 +210,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="24dp"
+                android:layout_marginLeft="@dimen/margin_horizontal"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="@string/out"
                 android:textAllCaps="true"
-                android:textColor="#F44336"
+                android:textColor="@color/color_out_red"
                 android:textSize="30sp" />
 
             <TextView
@@ -235,14 +235,14 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="@string/zero"
-                android:textColor="#616161"
+                android:textColor="@color/color_count"
                 android:textSize="30sp" />
 
             <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
                 android:layout_gravity="center"
-                android:layout_marginRight="24dp"
+                android:layout_marginRight="@dimen/margin_horizontal"
                 android:layout_weight="0"
                 android:onClick="addOneForOut"
                 android:text="@string/plus" />
@@ -254,8 +254,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginBottom="@dimen/margin_horizontal"
+            android:layout_marginTop="@dimen/margin_horizontal"
             android:onClick="resetScore"
             android:text="@string/reset" />
 

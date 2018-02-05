@@ -5,4 +5,12 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorButtonNormal">#84FFFF</color>
 
+    <color name="color_ball_green">#009688</color>
+
+    <color name="color_strike_blue">#2196F3</color>
+
+    <color name="color_out_red">#F44336</color>
+
+    <color name="color_count">#616161</color>
+
 </resources>

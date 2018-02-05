@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+
+    <dimen name="margin_vertical">8dp</dimen>
+
+    <dimen name="button_width">48dp</dimen>
+
+    <dimen name="button_height">48dp</dimen>
+
+    <dimen name="margin_horizontal">24dp</dimen>
+
+    <dimen name="view_width">1dp</dimen>
+</resources>
