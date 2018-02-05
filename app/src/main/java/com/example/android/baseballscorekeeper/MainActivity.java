@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTeamAScoreView = (TextView) findViewById(R.id.team_a_score);
-        mTeamBScoreView = (TextView) findViewById(R.id.team_b_score);
-        mBallView = (TextView) findViewById(R.id.ball);
-        mStrikeView = (TextView) findViewById(R.id.strike);
-        mOutView = (TextView) findViewById(R.id.out);
+        mTeamAScoreView = findViewById(R.id.team_a_score);
+        mTeamBScoreView = findViewById(R.id.team_b_score);
+        mBallView = findViewById(R.id.ball);
+        mStrikeView = findViewById(R.id.strike);
+        mOutView = findViewById(R.id.out);
 
     }
 
