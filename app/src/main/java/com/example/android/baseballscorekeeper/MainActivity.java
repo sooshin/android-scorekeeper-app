@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the score on scoreView
      */
-    public void display(TextView scoreView, int score) {
+    private void display(TextView scoreView, int score) {
         scoreView.setText(String.valueOf(score));
     }
 
