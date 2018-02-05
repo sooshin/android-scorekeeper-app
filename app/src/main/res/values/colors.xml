@@ -3,7 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorButtonNormal">#84FFFF</color>
 
     <color name="color_ball_green">#009688</color>
 
@@ -12,5 +11,7 @@
     <color name="color_out_red">#F44336</color>
 
     <color name="color_count">#616161</color>
+
+    <color name="color_scroll_bg">#e0f2f1</color>
 
 </resources>
