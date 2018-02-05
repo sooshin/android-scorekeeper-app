@@ -42,21 +42,23 @@
                     android:textSize="56sp" />
 
                 <Button
+                    android:id="@+id/add_one_team_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:onClick="addOneForTeamA"
+                    android:onClick="addPoint"
                     android:text="@string/plus_one_point" />
 
                 <Button
+                    android:id="@+id/add_two_team_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:onClick="addTwoForTeamA"
+                    android:onClick="addPoint"
                     android:text="@string/plus_two_point" />
 
 
@@ -95,21 +97,23 @@
                     android:textSize="56sp" />
 
                 <Button
+                    android:id="@+id/add_one_team_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:onClick="addOneForTeamB"
+                    android:onClick="addPoint"
                     android:text="@string/plus_one_point" />
 
                 <Button
+                    android:id="@+id/add_two_team_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:onClick="addTwoForTeamB"
+                    android:onClick="addPoint"
                     android:text="@string/plus_two_point" />
 
 

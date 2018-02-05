@@ -50,35 +50,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 1 points.
+     * Increase the right score for the Team by checking the id of the view passed as a parameter.
      */
-    public void addOneForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 1;
-        display(mTeamAScoreView, scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team A by 2 points.
-     */
-    public void addTwoForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 2;
-        display(mTeamAScoreView, scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team B by 1 points.
-     */
-    public void addOneForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 1;
-        display(mTeamBScoreView, scoreTeamB);
-    }
-
-    /**
-     * Increase the score for Team B by 2 points.
-     */
-    public void addTwoForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 2;
-        display(mTeamBScoreView, scoreTeamB);
+    public void addPoint(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.add_one_team_a:
+                // Increase the score for Team A by 1 points.
+                scoreTeamA = scoreTeamA + 1;
+                display(mTeamAScoreView, scoreTeamA);
+                break;
+            case R.id.add_two_team_a:
+                // Increase the score for Team A by 2 points.
+                scoreTeamA = scoreTeamA + 2;
+                display(mTeamAScoreView, scoreTeamA);
+                break;
+            case R.id.add_one_team_b:
+                // Increase the score for Team B by 1 points.
+                scoreTeamB = scoreTeamB + 1;
+                display(mTeamBScoreView, scoreTeamB);
+                break;
+            case R.id.add_two_team_b:
+                //Increase the score for Team B by 2 points.
+                scoreTeamB = scoreTeamB + 2;
+                display(mTeamBScoreView, scoreTeamB);
+                break;
+        }
     }
 
     /**
